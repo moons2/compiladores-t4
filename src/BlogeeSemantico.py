@@ -24,7 +24,8 @@ class BlogeeSemantico(SemanticoAnalyser):
             return False
         elif atributo in IMG:
 
-            # avaliar os casos de erro que podem ocorrer aqui
+            # a atribuicao da img na gramatica é em relação a origen da gramatica
+            # mas a verificação de existencia é em relação ao main
             if not os.path.isfile(argumento.replace('../', '')):
                 # print(argumento)
                 self.showError(

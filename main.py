@@ -104,13 +104,13 @@ class Blogee():
                     self.analisar()
 
             if self.args.geracao:
-                caminho = 'casos_de_teste/corretos/'
+                caminho = 'casosTeste_corretos'
                 print(f'----------GERACAO----------')
                 for arquivo in os.listdir(caminho):
                     print(f'----------{arquivo}----------')
                     self.arquivo = os.path.join(caminho, arquivo)
                     self.arquivo = os.path.join(
-                        'saida/corretos/', f'{arquivo}_blogee.html')
+                        'casosTeste_corretos/', f'saida_{arquivo}_correto.html')
                     self.gerar()
 
         elif comando == 'ajuda':
