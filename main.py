@@ -55,6 +55,10 @@ COMANDOS DISPONIVEIS
     [testar [--sintatico] [--semantico] [--geracao]]
         descricao: executa os casos de teste presentes em 'casos_de_teste'
         de a flag informada
+        ex:
+            python main.py testar --geracao
+            python main.py testar --sintatico
+            python main.py testar --semantico
 """
 
 
@@ -88,30 +92,32 @@ class Blogee():
             self.meta_modelo = metamodel_from_file(self.gramatica)
 
             if self.args.sintatico:
-                caminho = 'casos_de_teste/erros_sintaticos/'
-                print(f'----------ANALISE SINTATICA----------')
+                caminho = 'casosTeste_syntaxError'
+                print(f'----------ANALISE ERROS SINTATICOS----------')
                 for arquivo in os.listdir(caminho):
-                    print(f'----------{arquivo}----------')
-                    self.arquivo = os.path.join(caminho, arquivo)
-                    self.analisar()
+                    if(arquivo.split('.')[-1] == 'bgee'):
+                        print(f'----------{arquivo}----------')
+                        self.grammar_file = os.path.join(caminho, arquivo)
+                        self.analisar()
 
             if self.args.semantico:
-                caminho = 'casos_de_teste/erros_semanticos/'
-                print(f'----------ANALISE SEMANTICA----------')
+                caminho = 'casosTeste_semanticError'
+                print(f'----------ANALISE ERROS SEMANTICOS----------')
                 for arquivo in os.listdir(caminho):
-                    print(f'----------{arquivo}----------')
-                    self.arquivo = os.path.join(caminho, arquivo)
-                    self.analisar()
+                    if(arquivo.split('.')[-1] == 'bgee'):
+                        print(f'----------{arquivo}----------')
+                        self.grammar_file = os.path.join(caminho, arquivo)
+                        self.analisar()
 
             if self.args.geracao:
                 caminho = 'casosTeste_corretos'
                 print(f'----------GERACAO----------')
                 for arquivo in os.listdir(caminho):
-                    print(f'----------{arquivo}----------')
-                    self.arquivo = os.path.join(caminho, arquivo)
-                    self.arquivo = os.path.join(
-                        'casosTeste_corretos/', f'saida_{arquivo}_correto.html')
-                    self.gerar()
+                    if(arquivo.split('.')[-1] == 'bgee'):
+                        print(f'----------{arquivo}----------')
+                        self.grammar_file = os.path.join(caminho, arquivo)
+                        self.output = f'{caminho}/saida_{arquivo}_correto.html'
+                        self.gerar()
 
         elif comando == 'ajuda':
             print(MSG_AJUDA)
