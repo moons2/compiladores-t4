@@ -1,0 +1,40 @@
+// obrigatorio
+blog: "PanelaTerapia"
+
+//erro - caminho nao eh valido
+capa: "compilador/images/imagem_excorreto3.png"
+
+// obrigatorio
+autor: "Tatiana Romano"
+
+// obrigatorio
+titulo: "Canelone de Beringela"
+
+// obrigatorio
+data: "14 de Abril de 2021"
+
+corpo:
+	inicio
+		//corpo formado por dois paragrafos
+		paragrafo "Ingredientes:
+		- 2 berinjelas pequenas em fatias finas
+		- Sal a gosto
+		- 200g de queijo mussarela fatiado
+		- 1 vidro de palmito inteiros
+		- Azeite para untar
+		- Parmesão e manjericão para polvilhar
+		
+		Molho: 
+		- 2 colheres (sopa) de azeite
+		- 1/2 cebola picada
+		- 1 dente de alho picado
+		- 1 lata de tomate pelado picado
+		- Sal a gosto"
+        
+		paragrafo "Para o molho: aqueça uma panela com o azeite e frite a cebola e o alho até começar a dourar. 
+		Junte o tomate pelado e uma pitada de sal e cozinhe por 5 minutos. Desligue e reserve.
+		Pegue uma fatia de berinjela e polvilhe com sal. Sobre ela coloque 1/2 fatia de mussarela e um pedaço do palmito e enrole como um rocambole. 
+		Coloque em um refratário untado e repita o processo com o restante dos ingredientes.
+		Regue com o molho e leve ao forno alto, preaquecido, por 8 minutos. Retire, polvilhe com o parmesão e o manjericão e sirva"
+	fim
+//sem midias - ok pois nao eh obrigatorio

@@ -1,0 +1,39 @@
+// obrigatório
+blog: "Blogee"
+
+
+capa: "../images/oque_eh_blog.png"
+
+// obrigatório
+autor: "Juliiana Delasco Ambel"
+
+// obrigatório
+titulo: "O Que é Um Blog?"
+
+// obrigatório
+data: "18 de Dezembro de 2021"
+
+corpo:
+	inicio
+		paragrafo "A primeira vez que algo relacionado a blog apareceu foi em 
+        1997, quando o editor Jorn Barger mencionou o termo weblog. 
+        Alguns anos mais tardes e a palavra blog havia sido, 
+        então, cravada, há mais de duas décadas, bem no início da 
+        popularização da internet"
+        
+		paragrafo "Mas a prática de ter um blog só começou mesmo a decolar a partir da virada do milênio, 
+        especialmente a partir de 2002. E, assim como todas as coisas novas que 
+        surgem, elas tendem a atrair algum tipo de controvérsia consigo."
+
+		paragrafo "Foi naquele ano que Heather B. Armstrong publicou seu blog dooce.com. 
+        Ela tinha sido demitida no primeiro dia de trabalho dela por escrever sobre seus 
+        colegas de trabalho no blog. Isso fez com que o tema sobre privacidade 
+        na internet ganhasse destaque dentro da comunidade de usuários"
+	fim
+
+midias:
+	inicio
+		email "email"
+		instagram "lu"
+		facebook "userID"
+	fim

@@ -1,0 +1,7 @@
+após tentar gerar com:
+python main.py gerar -i casosTeste_semanticError/exemplo2_semantic.bgee -o casosTeste_semanticError/saida_exemplo2_semanticerror.html
+
+Resultado:
+Erro na linha 10: sequencia nao reconhecida proxima a 'igatório */erro sema'
+Analise finalizada sem exito!
+Falha na Geracao, verifique o que ocorreu errado!

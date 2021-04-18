@@ -1,0 +1,7 @@
+após tentar gerar com:
+python main.py gerar -i casosTeste_semanticError/exemplo3_semantic.bgee -o casosTeste_semanticError/saida_exemplo3_semanticerror.html
+
+Resultado:
+Erro na linha 27: sequencia nao reconhecida proxima a '."     *autor: "Ma'
+Analise finalizada sem exito!
+Falha na Geracao, verifique o que ocorreu errado!

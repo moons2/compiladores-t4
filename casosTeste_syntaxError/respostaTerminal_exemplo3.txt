@@ -1,0 +1,7 @@
+após tentar gerar com:
+python main.py gerar -i casosTeste_syntaxError/exemplo3_syntaxerror.bgee -o casosTeste_syntaxError/saida_exemplo3_syntaxerror.html
+
+Resultado:
+Erro na linha 34: sequencia nao reconhecida proxima a '                 *descricao '
+Analise finalizada sem exito!
+Falha na Geracao, verifique o que ocorreu errado!

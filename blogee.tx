@@ -1,0 +1,31 @@
+// Gramatica Blogee
+
+Pagina: comandos+=Comando;
+
+Comando: ComandoDefina | ComandoListe;
+
+ComandoDefina: tipo=TipoDeDefinicao ':' argumento=Argumento;
+
+ComandoListe: tipo=TipoDeLista ':' 'inicio' lista*=Listagem 'fim';
+
+Listagem: Paragrafo | Midia;
+
+Paragrafo: 'paragrafo' texto=Argumento;
+
+Midia: Email | Insta | Face;
+
+Email: rede='email' email=Argumento;
+
+Insta: rede='instagram' insta=Argumento;
+
+Face: rede='facebook' face=Argumento;
+
+TipoDeDefinicao: 'blog' | 'capa' | 'autor' | 'titulo' | 'data';
+
+TipoDeLista: 'corpo' | 'midias' ;
+
+// como nao ha ocorrencias de numeros retira NUMBER
+Argumento: STRING ;
+
+
+Comment: /\/\/.*$/; 

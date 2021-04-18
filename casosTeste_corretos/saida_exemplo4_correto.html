@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SóObrigatórios: Testando os obrigatórios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+      :root {
+        --primary-theme-color: #43aed9;
+        --text-theme-color: #4f4f4f;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        outline: 0;
+      }
+
+      html {
+        /* a cada 1rem será considera 10px */
+        font-size: 62.5%;
+      }
+
+      html,
+      body {
+        height: 100vh;
+        font-family: "Source Sans Pro";
+        text-rendering: optimizelegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        font-size: 1.6rem;
+      }
+
+      header {
+        background-color: var(--primary-theme-color);
+      }
+
+      header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 90%;
+        max-width: 980px;
+
+        margin: auto;
+      }
+
+      header img {
+        width: 100px;
+        margin-left: 20px;
+        padding: 10px 0;
+      }
+
+      header nav ul {
+        display: flex;
+      }
+
+      header nav ul li {
+        list-style: none;
+      }
+
+      header nav ul li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        padding: 2.4rem;
+        transition: all 250ms linear 0s;
+      }
+
+      header nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      h1 {
+        color: var(--text-theme-color);
+        font-size: 3.8rem;
+        line-height: 4.8rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      h2 {
+        color: rgb(75, 75, 75);
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+      }
+
+      h3 {
+        color: rgb(75, 75, 75);
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+      }
+
+      .button {
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        background-color: rgb(113, 89, 193);
+        margin: 15px 0px 0px;
+        padding: 12px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 150ms linear 0s;
+      }
+
+      .button:hover {
+        opacity: 0.9;
+      }
+
+      /*=============== 
+      HERO
+      ==================*/
+      section.hero {
+        margin: 40px 0;
+      }
+
+      section.hero .container {
+        width: 90%;
+        max-width: 980px;
+        max-height: 260px;
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+      }
+
+      section.hero img {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      section.hero p {
+        color: rgb(154, 142, 191);
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        margin: 10px 0px 0px;
+      }
+
+      /*=============== 
+      MAIN
+      ==================*/
+      main {
+        margin-bottom: 40px;
+      }
+
+      /*=============== 
+      CARDS
+      ==================*/
+      .cards {
+        width: 90%;
+        max-width: 980px;
+        margin: auto;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr; /*repeat(auto-fit, minmax(250px, 1fr))*/
+        grid-gap: 20px;
+      }
+
+      .text--medium {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        font-weight: 400;
+        color: var(--text-theme-color);
+        font-style: italic;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .image {
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 */
+        overflow: hidden;
+        position: relative;
+      }
+
+      .image img {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .content {
+        margin: 20px;
+      }
+
+      .title {
+        margin-bottom: 20px;
+      }
+
+      .info {
+        margin: 10px 0px;
+        display: flex;
+        align-self: end;
+        align-items: center;
+      }
+
+      .price {
+        margin-left: auto;
+      }
+
+      article {
+        font-size: 1.8rem;
+        text-align: justify;
+      }
+
+      article p {
+        margin: 20px 0px;
+        font-weight: 500;
+        color: var(--text-theme-color);
+      }
+
+      /*=============== 
+      FORM
+      ==================*/
+      #form {
+        width: 100%;
+
+        background: var(--primary-theme-color);
+        padding: 60px 0;
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #form img {
+        width: 80px;
+      }
+
+      .card ul {
+        display: block;
+      }
+
+      .card ul li {
+        list-style: none;
+        margin: 30px 0px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .card ul li a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 1.4rem;
+        transition: all 250ms linear 0s;
+      }
+
+      .card ul li a:hover {
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      .icon {
+        height: 20px;
+        width: 20px;
+        display: block;
+      }
+
+      .insta-icon {
+        background: url('images/instagram.svg');
+      }
+
+      .face-icon {
+        background: url('images/fb.svg');
+      }
+
+      .email-icon {
+        background: url('images/email.svg');
+      }
+
+      @media (max-width: 630px) {
+        html {
+          font-size: 50%;
+        }
+
+        .hero .container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero .container img {
+          order: -1;
+        }
+
+        .cards {
+          width: 90%;
+          max-width: 980px;
+          margin: auto;
+
+          display: grid;
+          grid-template-columns: 1fr; /*repeat(auto-fit, minmax(250px, 1fr))*/
+          grid-gap: 20px;
+        }
+
+        ._2nd {
+          order: -1;
+        }
+
+        .form-group {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <img
+          src="./images/blogee_logo_light.svg"
+          alt="Blogee"
+        />
+        <div class="menu-section">
+          <!-- Intencionalmente deixada vazia-->
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+          <img src="" alt="Capa do blog SóObrigatórios" />
+      </div>
+    </section>
+
+    <main>
+      <section class="cards">
+        <div class="card">
+
+          <div class="content">
+            <h1>
+              Testando os obrigatórios
+            </h1>
+
+            <div class="info">
+              <p class="text--medium">por <b>Luan Moraes e Karolayne Arrais</b></p>
+              <p class="price text--medium">publicado em <b>17 de Abril de 2021</b></p>
+            </div>
+
+            <article>
+              <h3> Redija ao menos um paragrafo !</h3>
+            </article>
+            </div>
+          </div>
+        </div>
+
+        <!--right div maybe TOC ou removerei em breve-->
+        <div class="card _2nd">
+          <div class="content">
+            
+          </div>
+        </div>
+
+        <!--Mídia-->
+        <div class="card">
+          <div class="content">
+            <h3>Mídias</h3>
+            <ul>
+              <h3> Nenhuma mídia adicionada!</h3>
+              <!--
+              <li><span class="insta-icon icon"></span><span><a href="https://www.instagram.com/{{ instagram }}">{{ instagram }}</a></span></li>
+              <li><span class="face-icon icon"></span><span><a href="https://pt-br.facebook.com/{{ facebook }}">{{ facebook }}</a></span></li>
+              <li><span class="email-icon icon"></span><span><a href="{{ email }}">{{ email }}</a></span></li>
+              -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="form">
+        <img src="./images/blogee_logo_light.svg"/> 
+    </section>
+
+  </body>
+</html>

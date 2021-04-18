@@ -1,0 +1,7 @@
+após tentar gerar com:
+python main.py gerar -i casosTeste_syntaxError/exemplo2_syntaxerror.bgee -o casosTeste_syntaxError/saida_exemplo2_syntaxerror.html
+
+Resultado:
+Erro na linha 5: 'capa' deve receber um caminho valido ate uma imagem.
+Analise finalizada sem exito!
+Falha na Geracao, verifique o que ocorreu errado!

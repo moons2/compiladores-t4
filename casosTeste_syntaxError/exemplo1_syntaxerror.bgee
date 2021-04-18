@@ -1,0 +1,35 @@
+// obrigatório
+blog: "EngData"
+
+capa: "../images/imagem_excorreto2.jpg"
+
+// obrigatório
+autor: "Marcos Garcia"
+
+// obrigatório
+titulo: "O que é um Engenheiro de Dados?"
+
+// obrigatório
+// erro - nao foi passado o argumento como cadeia de caracteres, faltou abrir a aspas
+data: 14 de Agosto de 2020"
+
+corpo:
+	inicio
+		paragrafo "O Data Engineer é o profissional responsável por garantir que os dados estejam fluindo das origens 
+		até os destinos corretos, trabalhando no desenvolvimento de fluxos de dados ou também chamados como pipelines. 
+		Existem diversas ferramentas e linguagens de programação para o desenvolvimento de fluxos."
+        
+		paragrafo "As Principais atribuições de um engenheiro de dados estão ligadas a desenhar e desenvolver rotinas
+		e objetos para armazenamento de dados, normalmente as rotinas são processos de carga (ETL) ou Ingestão de Dados. 
+		Dentro dessas rotinas também estão os procedimentos de tratamento, limpeza e qualidade de dados"
+
+		paragrafo "Atualmente não existe uma formação superior ( pelo menos até agora – Março 2020 ) em Engenharia de Dados, 
+		claro que deve surgir, algo em breve. Geralmente são formados em tecnologia e se especializam em Engenharia de Dados 
+		através de treinamentos específicos ou mesmo especializações de Mercado."
+	fim
+
+midias:
+	inicio
+		email "marcio_engdata@gmail.com"
+		instagram "marciodeg"
+	fim

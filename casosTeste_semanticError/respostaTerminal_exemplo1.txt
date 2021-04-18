@@ -1,0 +1,7 @@
+após tentar gerar com:
+python main.py gerar -i casosTeste_semanticError/exemplo1_semantic.bgee -o casosTeste_semanticError/saida_exemplo1_semanticerror.html
+
+Resultado:
+Erro na linha 16: sequencia nao reconhecida proxima a 'inicio           *capa: "../'
+Analise finalizada sem exito!
+Falha na Geracao, verifique o que ocorreu errado!

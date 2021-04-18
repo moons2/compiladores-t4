@@ -1,0 +1,7 @@
+após tentar gerar com:
+python main.py gerar -i casosTeste_syntaxError/exemplo1_syntaxerror.bgee -o casosTeste_syntaxError/saida_exemplo1_syntaxerror.html
+
+Resultado:
+Erro na linha 14: sequencia nao reconhecida proxima a 'as data: *14 de Agos'
+Analise finalizada sem exito!
+Falha na Geracao, verifique o que ocorreu errado!

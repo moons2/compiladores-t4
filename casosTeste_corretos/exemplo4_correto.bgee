@@ -1,0 +1,17 @@
+// obrigatorio
+blog: "SóObrigatórios"
+
+//sem imagem, ok pois nao e obrigatorio
+
+// obrigatorio
+autor: "Luan Moraes e Karolayne Arrais"
+
+// obrigatorio
+titulo: "Testando os obrigatórios"
+
+// obrigatorio
+data: "17 de Abril de 2021"
+
+//sem corpo - ok pois nao eh obrigatorio
+
+//sem midias - ok pois nao eh obrigatorio

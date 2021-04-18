@@ -1,0 +1,37 @@
+// obrigatório
+blog: "AstroJourney"
+
+capa: "../images/imagem_exErroSem1.jpg"
+
+// obrigatório
+autor: "Isa"
+
+// obrigatório
+titulo: "SOBRE PROGRESSÕES: VOCÊ SABIA QUE SEU SIGNO “MUDA” NO DECORRER DA VIDA?"
+
+// obrigatório
+data: "14 de Agosto de 2020"
+
+//erro semantico dentro do corpo - capa nao faz parte do corpo 
+corpo:
+	inicio	
+		paragrafo "Nosso sol “muda” de signo no decorrer da vida, e isso acontece graças ao que chamamos de Progressões. 
+		Esse foi um dos temas mais pedidos pra falar aqui quando perguntei sobre o que vocês mais queriam saber no meu 
+		Instagram, então hoje vim contar mais sobre esse assunto tão interessante! Se vocês estão aqui é porque com certeza 
+		já leram esse post, em que explico como funciona a leitura de mapa astral e como descobrir em que casa você tem cada 
+		signo para conseguirem entender um pouco melhor do seu mapa por conta própria – se não leram, poooor favor leiam antes 
+		de continuarem lendo esse post!
+		O fato é que, no dia em que você nasceu, o Sol estava em determinado grau de um signo. Se você é de Touro, o sol estava passando 
+		por esse signo, se é de Virgem, o sol estava passando por Virgem, e por aí vai. E uma das maneiras de ver as mudanças que ocorrem
+		na sua vida através da Astrologia é analisando as progressões do seu Sol,  e para fazer que é o fato de ele “andar” um grau por 
+		ano, deixando o restante do mapa astral estático.
+		Dessa maneira, como cada signo tem 30º, em um certo momento de vida – dependendo do grau em que o sol estava quando você nasceu – 
+		ele entra no próximo signo, e isso gera uma mudança na sua vida de acordo com as características daquele signo, e elas acabam por
+		influenciar sua trajetória e sua personalidade. Claro que você sempre terá características do seu mapa natal e seu signo “original”, 
+		mas esse novo gera mudanças notáveis na sua vida.
+		Seu sol passará 30 anos (30 graus) nesse próximo signo, e depois desse período entrará no signo seguinte, e por aí vai"
+	fim
+
+midias:
+	inicio
+	fim
