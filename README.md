@@ -59,4 +59,4 @@ O projeto contem pastas com exemplos de arquivos de entrada e saídas esperadas.
 A gramática da linguagem Blogee desenvolvida, está definida no arquivo [blogee.tx](https://github.com/moons2/compiladores-t4/blob/main/blogee.tx)
 
 ## VÍDEO AUXILIAR
-Segue o link de um breve vídeo mostrando a execução do projeto.
+Segue o [link](https://youtu.be/ScuOSjoYFUo) de um breve vídeo mostrando a execução do projeto.
