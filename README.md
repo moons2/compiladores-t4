@@ -103,7 +103,7 @@ titulo: "Titulo da matéria"
 
 data: "uma sequencia de caracteres descrevendo a data"
 
-copor:
+corpo:
     inicio
         paragrafo "paragrafo1"
         paragrafo "paragrafo2"
