@@ -87,6 +87,36 @@ O projeto contem pastas com exemplos de arquivos de entrada e saídas esperadas.
 
 A gramática da linguagem Blogee desenvolvida, está definida no arquivo [blogee.tx](https://github.com/moons2/compiladores-t4/blob/main/blogee.tx)
 
+Um exemplo completo da linguage `.bgee` se dá:
+
+```textX
+// isto é um comentário
+
+blog: "O nome do blog"
+
+// não se esqueça de incluir sua capa na pasta images e atribuir o caminho em relação a origem do arquivo.bgee
+capa: "images/capa_da_materia.extensao"
+
+autor: "identificação do autor"
+
+titulo: "Titulo da matéria"
+
+data: "uma sequencia de caracteres descrevendo a data"
+
+copor:
+    inicio
+        paragrafo "paragrafo1"
+        paragrafo "paragrafo2"
+    fim
+
+midias:
+    inicio
+        email "coloque seu email"
+        instagram "coloque seu username"
+        facebook "coloque seu username"
+    fim
+```
+
 ## VÍDEO AUXILIAR
 
 Segue o [link](https://youtu.be/ScuOSjoYFUo) de um breve vídeo mostrando a execução do projeto.
