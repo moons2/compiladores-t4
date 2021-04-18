@@ -71,6 +71,12 @@ class Blogee():
             # print(self.args)
 
             self.grammar_file = self.args.i[0]
+
+            if not os.path.isfile(self.grammar_file):
+                print(
+                    f'Arquivo com a linguagem destino nao encontrado, por favor verifique o nome e a extensão!\nNome: {self.grammar_file}')
+                return False
+
             self.meta_modelo = metamodel_from_file(self.gramatica)
 
             if comando == 'analisar':

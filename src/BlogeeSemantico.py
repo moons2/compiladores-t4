@@ -25,7 +25,7 @@ class BlogeeSemantico(SemanticoAnalyser):
         elif atributo in IMG:
 
             # avaliar os casos de erro que podem ocorrer aqui
-            if not os.path.isfile(os.path.join(os.path.dirname(__file__), argumento)):
+            if not os.path.isfile(argumento.replace('../', '')):
                 # print(argumento)
                 self.showError(
                     f"'{atributo}' deve receber um caminho valido ate uma imagem. ", linha)

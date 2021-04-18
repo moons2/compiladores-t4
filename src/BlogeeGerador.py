@@ -37,6 +37,8 @@ class BlogeeGerador():
             ret = self.traduzCorpo(valor)
         elif tipo == 'midias':
             ret = self.traduzMidia(valor)
+        elif tipo == 'capa':
+            ret = self.traduzCapa(valor)
 
         return ret
 
@@ -71,3 +73,7 @@ class BlogeeGerador():
                     f"<li><span class=\"face-icon icon\"></span><span><a href=\"https://pt-br.facebook.com/{midia['facebook']}\">{midia['facebook']}</a></span></li>")
 
         return ''.join(ret)
+
+    def traduzCapa(self, Capa):
+        # print(Capa)
+        return Capa
